@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+jspm_packages/
+web_modules/
+
+# Debugging and logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Local environment variables and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Testing and coverage tool outputs
+coverage/
+*.lcov
+.nyc_output
+
+# Build and build tool caches
+dist/
+build/
+.cache/
+.parcel-cache/
+.eslintcache/
+*.tsbuildinfo
+
+# Framework-specific build folders (Next.js, Nuxt.js)
+.next/
+out/
+.nuxt/
+
+# IDEs and OS files
+.DS_Store
+.idea/
+.vscode/

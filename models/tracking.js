@@ -1,0 +1,30 @@
+const mongoose = require("mongoose");
+const validator = require("mongoose-unique-validator");
+const trackingSchema = new mongoose.Schema({
+  jobNumber: { type: String },
+  jobName: { type: String },
+  location: { type: String },
+  dateOrdered: { type: String },
+  supplier: { type: String },
+  rep: { type: String },
+  contact: { type: String },
+  email: { type: String },
+  itemDescription: { type: String },
+  price: { type: Number },
+  qtyOrdered: { type: Number },
+  qtyReceived: { type: Number },
+  estShippedDate: { type: String },
+  shippedDate: { type: String },
+  receivedDate: { type: String },
+  receiver: { type: String },
+  currentLocationStorageId: { type: String },
+  currentLocationBuilding: { type: String },
+  dateSentToJobSite: { type: String },
+  shippingCost: { type: Number },
+  backOrderShippingQty: { type: Number },
+  backOrderShipping: { type: Number },
+  totalShipping: { type: Number },
+  preTaxMaterialCost: { type: Number },
+  totalCost: { type: Number },
+});
+module.exports = mongoose.model("trackings", trackingSchema);
